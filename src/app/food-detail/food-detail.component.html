@@ -1,0 +1,8 @@
+<div *ngIf="food">
+
+    <h2>{{food.title | uppercase}}</h2>
+    <div><span>Price: </span>R$ {{food.price.toFixed(2)}}</div>
+  
+    <button (click)="goBack()">go back</button>
+  </div>
+  <button (click)="save()">save</button>
